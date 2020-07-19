@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta name="description" content="Sitio web de gestión de álbumes de fotos">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="images/Logo2.png"/>
+    <link rel="stylesheet" type="text/css" href="css/fontello.css"/>
+    <title>Búsqueda avanzada - Photory</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo2.png" alt="Logo Photory" width="100" ></a>
+        <div>
+            <h1> Photory </h1>
+            <h2>Tu sitio donde compartir fotografías</h2>
+            <input type="text" name="titulo" maxlength="200" placeholder="Buscar">
+            <a href="iniciar-sesion.html">Iniciar sesión</a>
+            <a href="registro.html">Regístrate</a>
+        </div>
+    </header>
+
+    <form class="busqueda-avanzada" autocomplete="off" target="_self" action="resultado-busqueda.html">
+        <fieldset>
+            <legend><h2>Búsqueda de imágenes avanzada</h2></legend>
+            <p>Título de la imágen: <input type="text" name="titulo" maxlength="200" placeholder="Introduzca el titulo">
+            Fecha: <input type="date" name="fechab" required title="Introduzca la fecha">
+            País:
+            <select name="pais">
+                <option selected value="Seleccione...">Seleccione...</option>
+                <optgroup label="Europa">
+                    <option>Albania</option>
+                    <option>Alemania</option>
+                    <option>Andorra</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="América">
+                    <option>Antigua y Barbuda</option>
+                    <option>Argentina</option>
+                    <option>Bahamas</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                    <option>Afganistán</option>
+                    <option>Arabia Saudita</option>
+                    <option>Bangladés</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="África">
+                    <option>Angola</option>
+                    <option>Argelia</option>
+                    <option>Benín</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="Oceanía">
+                    <option>Australia</option>
+                    <option>Fiyi</option>
+                    <option>Islas Marshall</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="Euroasia">
+                    <option>Armenia</option>
+                    <option>Azerbaiyán</option>
+                    <option>Chipre</option>
+                    <option>...</option>
+                </optgroup>
+            </select>
+            <input type="submit" value="Buscar"></p>
+
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>
+            &copy; Copyright <time datetime="2018">2018</time>
+            <a href="acerca.html">por Araceli y Jéssica</a> <br>
+        </p>
+    </footer>
+</body>
+</html>

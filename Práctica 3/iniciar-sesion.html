@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta name="description" content="Sitio web de gestión de álbumes de fotos">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="images/Logo2.png"/>
+    <link rel="stylesheet" type="text/css" href="css/fontello.css"/>
+    <title>Iniciar sesión - Photory</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo2.png" alt="Logo Photory" width="100" ></a>
+        <div>
+            <h1> Photory </h1>
+            <h2>Tu sitio donde compartir fotografías</h2>
+            <form action="resultado-busqueda.html">
+                <input type="text" name="titulo" maxlength="200" placeholder="Buscar">
+                <button>Buscar</button>
+                <a href="registro.html">Regístrate</a>
+            </form>
+        </div>
+    </header>
+
+    <form class="iniciar-sesion" autocomplete="off" target="_self" action="menu-usuario.html">
+        <fieldset>
+            <legend><h2>Iniciar sesión</h2></legend>
+            <label for="usuario">Nombre de usuario:</label>
+            <input type="text" autofocus  id="usuario" placeholder="Introduzca un nombre de usuario" required autocomplete="on" title="Introduzca un nombre de usuario" size ="40"><br>
+
+            <label for="contrasenya">Contraseña:</label>
+            <input type="password" id="contrasenya" placeholder="Introduzca la contraseña" required title="Introduzca la contraseña" size ="40"><br>
+            <input type="submit" value="Iniciar sesión">
+        </fieldset>
+    </form>
+
+
+    <footer>
+        <p>
+            &copy; Copyright <time datetime="2018">2018</time>
+            <a href="acerca.html">por Araceli y Jéssica</a> <br>
+        </p>
+    </footer>
+</body>
+</html>

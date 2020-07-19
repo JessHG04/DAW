@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta name="description" content="Sitio web de gestión de álbumes de fotos">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="shortcut icon" href="images/Logo2.png"/>
+    <link rel="stylesheet" type="text/css" href="css/fontello.css"/>
+    <title>Registro - Photory</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="images/Logo2.png" alt="Logo Photory" width="100" ></a>
+        <div>
+            <h1> Photory </h1>
+            <h2>Tu sitio donde compartir fotografías</h2>
+            <input type="text" name="titulo" maxlength="200" placeholder="Buscar">
+            <a href="iniciar-sesion.html">Iniciar sesión</a>
+        </div>
+    </header>
+
+    <form class="registro" autocomplete="off" target="_self" action="index.html">
+        <fieldset>
+            <legend><h2>Registro</h2></legend>
+            Nombre de usuario*:
+            <input type="text" autofocus  name="usuario" placeholder="Introduzca un nombre de usuario" required autocomplete="on" title="Introduzca un nombre de usuario" size ="40"><br>
+
+            Contraseña*:
+            <input type="password" name="contrasenya" placeholder="Introduzca la contraseña" required title="Introduzca la contraseña" size ="40"><br>
+
+            Repita la contraseña*:
+            <input type="password" name="vcontrasenya" placeholder="Repita la contraseña" required title="Repita la contraseña" size ="40"><br>
+
+            Dirección de e-mail*:
+            <input type="email" name="email" autocomplete="on" placeholder="Introduzca su email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="Introduzca su email" size ="40"><br>
+
+            Sexo*:
+            <select name="sexo">
+                <option value="Seleccione...">Seleccione...</option>
+                <option value="Mujer">Mujer</option>
+                <option value="Hombre">Hombre</option>
+            </select> <br>
+
+            Fecha de nacimiento*:
+            <input type="date" name="fechan" required title="Introduzca su fecha de nacimiento"><br>
+
+            País de residencia*:
+            <select name="pais">
+                <option selected value="Seleccione...">Seleccione...</option>
+                <optgroup label="Europa">
+                    <option>Albania</option>
+                    <option>Alemania</option>
+                    <option>Andorra</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="América">
+                    <option>Antigua y Barbuda</option>
+                    <option>Argentina</option>
+                    <option>Bahamas</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="Asia">
+                    <option>Afganistán</option>
+                    <option>Arabia Saudita</option>
+                    <option>Bangladés</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="África">
+                    <option>Angola</option>
+                    <option>Argelia</option>
+                    <option>Benín</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="Oceanía">
+                    <option>Australia</option>
+                    <option>Fiyi</option>
+                    <option>Islas Marshall</option>
+                    <option>...</option>
+                </optgroup>
+
+                <optgroup label="Euroasia">
+                    <option>Armenia</option>
+                    <option>Azerbaiyán</option>
+                    <option>Chipre</option>
+                    <option>...</option>
+                </optgroup>
+            </select> <br>
+
+            Ciudad de residencia*:
+            <input type="text" name="usuario" placeholder="Introduzca su ciudad de residencia" required title="Introduzca su ciudad de residencia" size ="40"><br>
+
+            Foto de perfil*:
+            <span class="icon-upload"></span><input type="file" name="nfile" accept="image/*" multiple class="boton"> <br>
+
+            <input type="submit" value="Registrarse"><br>
+        </fieldset>
+
+        <!-- <footer>
+            <a href="iniciar-sesion.html"><span class="icon-login"></span><span>Ya tengo una cuenta</span></a>
+        </footer> -->
+    </form>
+
+    <footer>
+        <p>
+            &copy; Copyright <time datetime="2018">2018</time>
+            <a href="acerca.html">por Araceli y Jéssica</a> <br>
+        </p>
+    </footer>
+</body>
+</html>
