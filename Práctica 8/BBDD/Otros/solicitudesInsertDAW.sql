@@ -1,0 +1,5 @@
+-- Comprueba que los ids de album sean el mismo
+
+insert into pibd.solicitudes (Album, Nombre, Titulo, Descripcion, Email, Calle, Numero, Puerta, CP, Localidad, Provincia, Pais, Color, Copias, Resolucion, Fecha, IColor, FRegistro, Coste) values
+(122, 'Raquel Fernández García', 'Lo mejor de Noruega', 'Esta foto es tan especial que el álbum sólo la contiene a ella', 'raquel@gmail.com', 'Cardenal LLuch', 47, '1ºA', 41005, 'Sevilla', 'Sevilla', 49, '#FFFFFF', 2, 900, '2018-12-14', 0, '2018-11-30 17:24:00', 0.17),
+(124, 'Alex Simpson', 'El búho familiar', 'Mi padre falleció y quiero mantener los mejores recuerdos que tengo con él como cuando veíamos todos los días de Navidad a este búho cerca de nuestra casa del bosque', 'alex@gmail.com', 'Pintor Luis García', 1, '3ºC', 03400, 'Villena', 'Alicante', 49, '#000000', 1, 750, '2019-01-05', 1, '2018-12-23 12:26:00', 0.12);

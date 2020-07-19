@@ -1,0 +1,6 @@
+**Usuario wwwdata:
+	GRANT SELECT, INSERT, UPDATE, DELETE, FILE ON *.* TO 'wwwdata'@'localhost';
+
+
+**Este mejor:
+GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, FILE, ALTER ON *.* TO 'wwwdata'@'localhost' WITH GRANT OPTION MAX_USER_CONNECTIONS 2;

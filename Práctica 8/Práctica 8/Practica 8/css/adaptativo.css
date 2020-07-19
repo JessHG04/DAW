@@ -1,0 +1,34 @@
+/* ESTILO ADAPTATIVO / RESPONSIVE / PARA MOVIL */
+@media all and (max-width: 550px) {
+    #tablaAcerca td {
+        background-color: #888A85;
+        color: black;
+        font-size: 14pt;
+    }
+    #tablaAcerca td + td {
+        font-size: 12pt;
+    }
+}
+
+@media all and (max-width: 380px) {
+    table {
+        width: 100%;
+    }
+    td {
+        background-color: #888A85;
+        color: black;
+        font-size: 14pt;
+    }
+    td + td {
+        font-weight: normal;
+        font-size: 12pt;
+    }
+}
+
+/*Barra scroll para tabla acerca*/
+/* @media all and (max-width: 440px) {
+    #tablaAcerca{
+        display: block;
+        overflow-x: auto;
+    }
+} */
