@@ -1,0 +1,250 @@
+/* ESTILO DE IMPRESIÓN */
+
+/*BODY*/
+body{
+    background-color: #FFFFFF; /* Ctrl + Shift + C para abrir la paleta de colores*/
+    margin: 0;
+}
+@page{
+    margin-top:  2.5cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    margin-bottom: 2.5cm;
+}
+h1{
+    font-family: 'Comic Sans', serif;
+    font-size: 20pt;
+}
+h2{
+    font-family: 'Arial', serif;
+    font-size: 18pt;
+}
+th{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14pt;
+}
+p, td{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+}
+a{ /* Todos los enlaces */
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    cursor: text;
+}
+a[href^=http] { /* Enlaces externos */
+    color: #204A87;
+    text-decoration: underline;
+}
+a[href^=http]:hover{
+    cursor: copy;
+}
+a[href^=http]:after {
+    content:" (" attr(href) ")";
+}
+
+/*CABECERA*/
+    body>header{
+        background-color:#FFFFFF;
+        color: #000000;
+        border-bottom: none;
+    }
+        body>header>img{
+            display: none;
+        }
+        body>header>h1{
+            margin: 0;
+        }
+        body>header>h2{
+            margin: 0;
+        }
+        body>header>a>img{
+            display: none;
+        }
+        body>header>div{
+            display: none;
+        }
+        #buscadorNav{
+            display: none;
+        }
+
+/*PAGINA INDEX*/
+    #formulario-index{
+        display: none;
+    }
+    body>form{ /* Si le pongo el display none a este desaparece el de resultado de búsqueda */
+        text-align: center;
+        margin: .5em;
+    }
+    body>section{
+        padding: 0;
+    }
+        body>section>h2{
+            margin-top: 0.5cm;/*Esto se quitaria si quiere las imagenes */
+        }
+        /*body>section>div{ * POR SI QUIERE LAS IMAGENES *
+            display: flex;
+            flex-wrap: wrap;
+            flex-grow: .1;
+        }
+            body>section>div>figure{
+                margin: 0;
+                margin-right: 0.5cm;
+            }*/
+        body>section>div{ /*Esto se quitaria si quiere las imagenes */
+            display: block;
+        }
+            body>section>div>figure{ /*Esto se quitaria si quiere las imagenes */
+                margin: 0;
+            }
+                body>section>div>figure>a{  /*Esto quita la imagen */
+                    display: none;
+                }
+
+/*PAGINAS: REGISTRO, INICIAR SESION, BUSQUEDA AVANZADA, SOLICITAR ALBUM*/
+        .registro>fieldset{
+            border-color: #FFFF;
+        }
+                    .registro>fieldset>legend>h2{
+                        font-size: 30px;
+                        margin: .1em;
+                        text-align: center;
+                    }
+            .registro>fieldset>div{
+                margin: 1.6em 0;
+                text-align: left;
+            }
+                .registro>fieldset>div>label{
+                   width: 25%;
+                   float: left;
+                   padding-top: .55em;
+                   margin-right: 2em;
+                }
+                .registro>fieldset>div>input{
+                    width: 55%;
+                    padding: .5em;
+                    margin: .2em;
+                }
+                .registro>fieldset>div>select{
+                    display: inline-flex;
+                    flex-grow: 1;
+                    width: 55%;
+                    padding: .5em;
+                    background-color: #FFF;
+                    margin: .2em;
+                }
+            .registro>fieldset>input[type="submit"]{
+                display: none;
+            }
+            /* #formularioSolicitarAlbum{ * POR SI QUIERE QUITAR EL FORMULARIO DE SOLICITAR ALBUM *
+                display: none;
+            } */
+            #formularioSolicitarAlbum{
+                page-break-before: always;
+            }
+
+/*PAGINA SOLICITAR ALBUM, ACERCA, RESPUESTA ALBUM*/
+            body>section>h2{
+                text-align: center;
+            }
+            #direccion{
+                margin: 1.6em 0;
+                text-align: left;
+            }
+                #direccion>label{
+                   width: 20%;
+                   float: left;
+                   padding-top: .55em;
+                   margin-right: 2em;
+                }
+                #direccion>input{
+                    width: 55%;
+                    padding: .5em;
+                    margin: .2em;
+                    margin-left: 20%;
+                }
+                #direccion>select{
+                    display: inline-flex;
+                    flex-grow: 1;
+                    width: 55%;
+                    padding: .5em;
+                    background-color: #FFF;
+                    margin: .2em;
+                    margin-left: 20%;
+                }
+                .registro>fieldset>div>input[type="color"]{
+                    width: 5%;
+                    color: black;
+                    height: 2.5em;
+                    padding: .1em;
+                }
+                .registro>fieldset>div>input[type="checkbox"]{
+                    width: 1em;
+                    height: 1em;
+                    margin-top: 1em;
+                }
+                    .registro>fieldset>p{
+                        margin: 0;
+                    }
+            body>section>table{
+                border-collapse: collapse;
+                width: 100%;
+            }
+                body>section>table tr{
+                    background-color: #F3F3F3;
+                }
+                body>section>table tr:nth-child(even){
+                    background-color: #F3F3F3;
+                }
+                    body>section>table th{
+                        background-color: #888A85;
+                        color: black;
+                    }
+
+/* MENU USUARIO */
+        #usuario>a:link, #usuario>a:visited{
+            background-color: #FFFFFF;
+        }
+        #usuario>a.enlaceSalirUsu{
+            display: none;
+            content: "";
+        }
+
+/* DETALLE DE FOTO */
+
+/*RESULTADO DE BUSQUEDA*/
+
+/* BODY > FOOTER */
+    body>footer{
+        background-color:#FFFFFF;
+        color: #000000;
+        border-top: none;
+    }
+        body>footer>a{
+            color: #204A87;
+        }
+
+/* MEDIA QUERIS */
+@media all and (max-width: 550px) {
+    #tablaAcerca td {
+        background-color: #888A85;
+        color: black;
+        font-size: 14pt;
+    }
+    #tablaAcerca td + td {
+        font-size: 12pt;
+    }
+}
+
+@media all and (max-width: 380px) {
+    td {
+        background-color: #888A85;
+        color: black;
+        font-size: 14pt;
+    }
+    td + td {
+        font-size: 12pt;
+    }
+}

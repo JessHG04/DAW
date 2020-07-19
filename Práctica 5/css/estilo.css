@@ -1,0 +1,420 @@
+/* ESTILO PRINCIPAL DE LA PÁGINA */
+*{
+    box-sizing: border-box;
+}
+
+/*BODY*/
+body{
+    background-color: #FAD7A0;
+    color: #000000;
+    min-width: 320px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*CABECERA*/
+	body>header{
+		margin: 0;
+		background-color: lightblue;
+		overflow: hidden;
+        border-bottom: 1px solid #000; /*Jess*/
+	}
+		body>header>img{
+			display: inline;
+			margin-left: 1em;
+			margin-top:  1em;
+		}
+		body>header>a>img{
+			display: inline;
+			margin-left: 1em;
+			margin-top:  1em;
+		}
+		body>header>h1{
+			display: inline;
+			max-width: 200px;
+			margin: .5em;
+		}
+		body>header>h2{
+			display: inline;
+			max-width: 400px;
+			margin: .5em;
+		}
+		body>header>div{
+            float: right;
+            padding-right: .5em;
+            padding-bottom: .5em;
+            margin-top:  .35em;
+		}
+			body>header>div>a:link, body>header>div>a:visited {
+			    background-color: #729FCF;
+			    color: white;
+			    padding: 10px 20px;
+			    text-align: center;
+			    text-decoration: none;
+			    display: inline-block;
+			}
+			body>header>div>a:hover, body>header>div>a:active {
+			    background-color: #3465A4FF;
+			}
+		#buscadorNav{
+			text-align: center;
+			width: 85%;
+            padding-right: .5em;
+            padding-bottom: .5em;
+            margin-top:  .35em;
+        }
+			#buscadorNav>input{
+			    width: 50%;
+			    padding: .7em;
+			    box-sizing: border-box;
+			}
+            #buscadorNav>input:hover, #buscadorNav>input:focus{
+                background-color: #F3F3F3;
+            }
+			#buscadorNav>a:link, #buscadorNav>a:visited {
+			    background-color: #729FCF;
+			    color: white;
+			    padding: 10px 20px;
+			    text-align: center;
+			    display: inline-block;
+			}
+			#buscadorNav>a:hover, #buscadorNav>a:active {
+			    background-color: #3465A4FF;
+			}
+
+/*PAGINA INDEX*/
+	body>form{
+		text-align: center;
+		margin: .5em;
+	}
+		body>form>input{
+			display: inline-flex;
+		    flex-grow: 1;
+		    width: 50%;
+		    margin: 0;
+		    margin-bottom: 1em;
+		    padding: .5em;
+		    box-sizing: border-box;
+		}
+        body>form>input:hover, body>form>input:focus{
+            background-color: #F3F3F3;
+        }
+		body>form>button{
+			width: 10em;
+		    margin: 0;
+		    margin-bottom: 1em;
+		    padding: .5em;
+		    box-sizing: border-box;
+		}
+		body>form>a:link, body>form>a:visited {
+		    background-color: #D3D7CFFF;
+		    border: 1px solid grey;
+		    color: black;
+		    padding: 6px 10px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		}
+		body>form>a:hover, body>form>a:active {
+		    border: 1.2px solid #555753FF;
+		}
+	body>section{
+		padding: 1em;
+		overflow: hidden;
+        padding-left: 1.5em;
+	}
+		body>section>h2{
+			text-align: center;
+			margin-top: 0;
+		}
+		body>section>div{
+			display: flex;
+			flex-wrap: wrap;
+	        flex-grow: .1;
+		}
+        body>section>div>figure>a>img{
+            height: 200px;
+            width:  200px;
+        }
+        body>section>div>figure>figcaption>p>a{ /*Jess*/
+            text-decoration: none;
+        }
+
+/*PAGINAS: REGISTRO, INICIAR SESION, BUSQUEDA AVANZADA, SOLICITAR ALBUM*/
+        .registro>fieldset{
+        	display: inline;
+            border: 1px solid black;
+            padding: 10px;
+            margin-top: 1em;
+            width: 90%;
+        }
+	                .registro>fieldset>legend>h2{
+	                    font-size: 30px;
+	                    margin: .1em;
+	                    text-align: center;
+	                }
+            .registro>fieldset>div{
+            	margin: 1.6em 0;
+            	text-align: left;
+			}
+				.registro>fieldset>div>label{
+				   width: 25%;
+				   float: left;
+				   padding-top: .55em;
+				   margin-right: 2em;
+				}
+                .registro>fieldset>div>input{
+                    width: 55%;
+                    padding: .5em;
+                    margin: .2em;
+                }
+                .registro>fieldset>div>input:hover, .registro>fieldset>div>input:focus{
+                    background-color: #FFEBE6FF;
+                }
+                .registro>fieldset>div>input:focus:valid{
+                    border-color: green;
+                    border-style: double;
+                }
+                .registro>fieldset>div>input:focus:invalid{
+                    border-color: red;
+                    border-style: double;
+                }
+                .registro>fieldset>div>select{
+                    display: inline-flex;
+                    flex-grow: 1;
+                    width: 55%;
+                    padding: .5em;
+                    background-color: #FFF;
+                    margin: .2em;
+                }
+                .registro>fieldset>div>select:hover, .registro>fieldset>select:focus{
+                    background-color: #FFEBE6FF;
+                }
+                    .registro>fieldset>div>select>option:hover{
+                        background-color: #FFEBE6FF;
+                    }
+            .registro>fieldset>input[type="submit"]{
+                padding: 10px 20px;
+                margin-left: 50%;
+            }
+            .registro>fieldset>input[type="submit"]:hover{
+                cursor: pointer;
+            }
+
+/*PAGINA SOLICITAR ALBUM, ACERCA, RESPUESTA ALBUM*/
+			body>section>h2{
+				text-align: center;
+			}
+			#direccion{
+            	margin: 1.6em 0;
+            	text-align: left;
+			}
+				#direccion>label{
+				   width: 20%;
+				   float: left;
+				   padding-top: .55em;
+				   margin-right: 2em;
+				}
+                #direccion>input{
+                    width: 10%;
+                    padding: .5em;
+                    margin: .2em;
+                }
+                #direccion>select{
+                    display: inline-flex;
+                    flex-grow: 1;
+                    width: 10%;
+                    padding: .5em;
+                    background-color: #FFF;
+                    margin: .2em;
+                }
+                #direccion>select:hover, .registro>fieldset>select:focus{
+                    background-color: #FFEBE6FF;
+                }
+                    #direccion>select>option:hover{
+                        background-color: #FFEBE6FF;
+                    }
+                .registro>fieldset>div>input[type="color"]{
+                	width: 5%;
+                	height: 2.5em;
+                    padding: .1em;
+                }
+                .registro>fieldset>div>input[type="checkbox"]{
+                	width: 1em;
+                	height: 1em;
+                	margin-top: 1em;
+                }
+                	.registro>fieldset>p{
+	                    margin: 0;
+	                }
+	        #tarifas{
+	        	text-align: left;
+	        }
+            body>section>table, th, td{
+                margin: 0;
+                text-align: left;
+            }
+            body>section>table{
+                border-collapse: collapse;
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                width: 20em;
+            }
+            #tablaAcerca{
+                width: 100%;
+            }
+                body>section>table tr{
+                    background-color: #ADBFD1;
+                }
+                body>section>table tr:nth-child(even){
+                    background-color: #729FCF;
+                }
+                body>section>table tr:hover{
+                    background-color: #EEE;
+                }
+                    body>section>table th{
+                        border: 1px solid #DDD;
+                        text-align: left;
+                        background-color: #3465A4;
+                        color: white;
+                        padding: 15px;
+                    }
+                    body>section>table td{
+                        border: 1px solid #DDD;
+                        padding: 8px;
+                    }
+                    body>section>table>th, td {
+                        padding: 15px;
+                    }
+
+/* MENU USUARIO */
+        body>section>img{
+            display: inline;
+            margin-left: 1em;
+            margin-top:  1em;
+        }
+        #usuario{
+            display: inline-block;
+            padding-left: 20px;
+            margin-top:  .20em;
+        }
+        #usuario>h2{
+            margin-top: 0;
+            margin-bottom: .30em;
+        }
+        #usuario>a:link, #usuario>a:visited{
+            background-color: #F4B53E;
+            border: 1px solid;
+            color: black;
+            padding: 8px 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 7px;
+        }
+        #usuario>a:hover, #usuario>a:active{
+            border: 1px solid #FFFFFF;
+        }
+
+/* DETALLE DE FOTO */
+        #detalle-foto{
+            text-align: center;
+            display: block;
+        }
+        #detalle-foto>figure>img{
+            display: inline;
+        }
+        #detalle-foto>p>a{
+            text-decoration: none;
+        }
+
+/*RESULTADO DE BUSQUEDA*/
+body>fieldset>figure>figcaption>p>a{
+    text-decoration: none;
+}
+
+/* BODY > FOOTER */
+	body>footer{
+		background: lightblue;
+		color: white;
+		padding: 1em;
+		text-align: center;
+        border-top: 1px solid #000; /*Jess*/
+        width: 100%;
+	}
+		body>footer>a{
+			color: #372b44;
+		}
+		body>footer>a:visited{
+			color: #372b44;
+		}
+
+/* MEDIA QUERIS */
+@media all and (max-width: 550px) {
+    #tablaAcerca {
+        width: 100%;
+    }
+    #tablaAcerca td {
+        background-color: #3465A4;
+        color: white;
+        font-weight: bold;
+    }
+    #tablaAcerca th{
+        display: none;
+    }
+    #tablaAcerca td {
+        display: block;
+        text-align:center;
+    }
+    #tablaAcerca td + td {
+        background-color: #FFFFFF;
+        color: black;
+        font-weight: normal;
+    }
+    #tablaAcerca td + td :nth-child(even){
+        background-color: #FFFFFF;
+    }
+    #tablaAcerca td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
+
+@media all and (max-width: 380px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        background-color: #3465A4;
+        color: white;
+        font-weight: bold;
+    }
+    th{
+        display: none;
+    }
+    td {
+        display: block;
+        text-align:center;
+    }
+    td + td {
+        background-color: #FFFFFF;
+        color: black;
+        font-weight: normal;
+    }
+    td + td :nth-child(even){
+        background-color: #FFFFFF;
+    }
+    td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
+
+/* @media all and (max-width: 440px) {
+    #tablaAcerca{
+        display: block;
+        overflow-x: auto;
+    }
+} */
