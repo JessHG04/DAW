@@ -1,0 +1,6 @@
+"images/foto1.jpg"|Lola|Paisaje estrellado de Noruega ha sido elegido.
+"images/foto8.jpg"|Dimitry|Estampida de caballos ha sido elegido.
+"images/foto12.jpg"|Beatriz|Bosque frondoso en la época del otoño ha sido elegido.
+"images/foto10.jpg"|Jaime|Atardecer en la ópera de Sídney ha sido elegido.
+"images/foto9.jpg"|Luis|Corazón hecho con un libro ha sido elegido.
+"images/FotosUsuarios/nadie/nadie-1663699880-IMG-20170323-WA0020.jpg"|Meg|Zeus de pequeño ha sido elegido.

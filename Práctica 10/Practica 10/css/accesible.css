@@ -1,0 +1,349 @@
+/*ESTILO ACCESIBLE*/
+
+* {
+    font-size: 1.2em;
+    font-family: arial, helvetica, sans-serif;
+    color: #FFF;
+    background-color: #000000;
+    line-height: 1.3em;
+}
+
+a {
+    background-color: #000000;
+    color: #FF0000;
+    text-decoration: none;
+    border-bottom: 3px dotted #FF0000;
+}
+
+a:visited {
+    background-color: #000000;
+    color: #FF6030;
+    border-bottom: 3px solid #FF6030;
+}
+
+a:focus, a:hover {
+    color: #003366;
+    background: #CCCCCC;
+    border-bottom: 3px solid #003366;
+}
+
+/* ENCABEZADO*/
+
+body>header{
+    background-color: #000000;
+}
+    body>header>div>a{
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+    }
+    body>header>div>a>span:hover{
+        background-color: #DEE8F1;
+        color: #003366;
+        margin: 0;
+    }
+    body>header>div>input:hover, body>header>div>input:focus{
+        color: #003366;
+        background: #DEE8F1;
+    }
+    body>header>div>a:link{
+        background-color: #000000;
+        color: #FF0000;
+        text-decoration: none;
+        border-bottom: 3px dotted #FF0000;
+        margin: 0;
+    }
+    body>header>div>a:visited{
+        background-color: #000000;
+        color: #FF6030;
+        border-bottom: 3px solid #FF6030
+        margin: 0;
+    }
+    body>header>div>a:hover, body>header>div>a:active{
+        color: #003366;
+        background: #DEE8F1;
+        border-bottom: 3px solid #003366;
+        margin: 0;
+    }
+
+    #buscadorNav>a:link{
+        background-color: #000000;
+        color: #FF0000;
+        border-bottom: 3px dotted #FF0000;
+        }
+    #buscadorNav>a:visited {
+        background-color: #000000;
+        color: #FF6030;
+        border-bottom: 3px solid #FF6030
+        }
+    #buscadorNav>a:hover, #buscadorNav>a:active {
+        color: #003366;
+        background: #DEE8F1;
+        border-bottom: 3px solid #003366;
+        }
+
+/*INDEX*/
+body>main>section>div>figure>a>img{
+    height: 500px;
+    width: 500px;
+}
+
+body>main>section>img{
+    height: 500px;
+    width: 500px;
+}
+
+body>main>form{
+    background-color: #000000;
+    margin: 0;
+}
+
+    body>main>form>input:hover, body>main>form>input:focus{
+        color: #003366;
+        background: #DEE8F1;
+    }
+
+    body>main>form>a:link{
+        background-color: #000000;
+        color: #FF0000;
+        border:none;
+        border-bottom: 3px dotted #FF0000;
+        }
+    body>main>form>a:visited {
+        background-color: #000000;
+        color: #FF6030;
+        border:none;
+        border-bottom: 3px solid #FF6030;
+        }
+    body>main>form>a:hover, body>main>form>a:active {
+        color: #003366;
+        background: #CCCCCC;
+        border:none;
+        border-bottom: 3px solid #003366;
+        }
+
+    button:hover, button:focus{
+        color: #003366;
+        background: #CCCCCC;
+        border-bottom: 3px solid #003366;
+    }
+
+    body>main>form>div>select{
+        background-color: #000000;
+        color:#FFFFFF;
+    }
+
+ /*REGISTRO*/
+    .registro>fieldset>div>input{
+        width: 15em;
+    }
+    .registro>fieldset>div>input{
+        width: 15em;
+    }
+    .registro>fieldset>div>input:hover, .registro>fieldset>div>input:focus{
+            color: #003366;
+            background: #DEE8F1;
+        }
+    .registro>fieldset>div>input:focus:valid{
+            border-color: #00FF05;
+        }
+    .registro>fieldset>div>input:focus:invalid{
+            border-color: #FF0000;
+        }
+    .registro>fieldset>div>select{
+            background-color: #000000;
+            font-style: bold;
+            width: 15em;
+        }
+    .registro>fieldset>div>select:hover, .registro>fieldset>select:focus{
+            color: #003366;
+            background: #DEE8F1;
+            font-size: 1.2em;
+            font-style: bold;
+            padding: .5em;
+            margin: .2em;
+        }
+    .registro>fieldset>div>select>option{
+            font-size: 1.2em;
+
+        }
+    .registro>fieldset>div>select>option:hover{
+            color: #003366;
+            background: #DEE8F1;
+            font-size: 1.2em;
+        }
+
+    .registro>fieldset>div>select>optgroup>option:hover{
+            color: #003366;
+            background: #DEE8F1;
+            font-size: 1.2em;
+        }
+    .registro>fieldset>input:hover, .registro>fieldset>input:focus{
+        color: #003366;
+        background: #DEE8F1;
+        font-size: 1.2em;
+    }
+        .registro>fieldset>legend>h2{
+            font-size: 60px;
+        }
+    .registro>fieldset>div>textarea{
+        width: 15em;
+    }
+     #direccion{
+                margin: 1.6em 0;
+                text-align: left;
+            }
+                #direccion>label{
+                   width: 20%;
+                   float: left;
+                   padding-top: .55em;
+                   margin-right: 2em;
+                }
+                #direccion>input{
+                    width: 55%;
+                    padding: .5em;
+                    margin: .2em;
+                    margin-left: 20%;
+                }
+                #direccion>select{
+                    display: inline-flex;
+                    flex-grow: 1;
+                    width: 55%;
+                    padding: .5em;
+                    margin: .2em;
+                    margin-left: 20%;
+                    background-color: #000000;
+                    font-style: bold;
+                }
+                #direccion>select:hover, #direccion>select:focus{
+                        color: #003366;
+                        background: #DEE8F1;
+                        font-size: 1.2em;
+                        font-style: bold;
+                    }
+                #direccion>select>option{
+                        font-size: 1.2em;
+
+                    }
+                #direccion>select>option:hover{
+                        color: #003366;
+                        background: #DEE8F1;
+                        font-size: 1.2em;
+                    }
+
+/*MENU USUARIO*/
+
+    #Musuario>a:link{
+        background-color: #000000;
+        color: #FF0000;
+        border-bottom: 3px dotted #FF0000;
+        }
+
+    #Musuario>a:visited{
+        background-color: #000000;
+        color: #FF6030;
+        border-bottom: 3px solid #FF6030;
+        }
+
+    #Musuario>a:hover, #Musuario>a:active{
+        color: #003366;
+        background: #CCCCCC;
+        border-bottom: 3px solid #003366;
+        }
+
+/*FOOTER*/
+
+body>footer{
+    background-color: #000000;
+}
+/*TABLAS*/
+body>section>table, th, td{
+    margin: 0;
+    text-align: left;
+}
+body>section>table{
+    border-collapse: collapse;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 20em;
+}
+#tablaAcerca{
+    width: 100%;
+}
+    body>main>section>table tr{
+        background-color: #000000;
+    }
+    body>main>section>table tr:nth-child(even){
+        background-color: #000000;
+    }
+    body>main>section>table tr:hover{
+        color: #003366;
+        background: #DEE8F1;
+    }
+        body>main>section>table th{
+            background-color: #FFFFFF;
+            color: black;
+        }
+
+
+/*MEDIA QUERIES*/
+@media all and (max-width: 550px) {
+    #tablaAcerca {
+        width: 100%;
+    }
+    #tablaAcerca td {
+        background-color: #FFFFFF;
+        color: black;
+        font-weight: bold;
+    }
+    #tablaAcerca th{
+        display: none;
+    }
+    #tablaAcerca td {
+        display: block;
+        text-align:center;
+    }
+    #tablaAcerca td + td {
+        background-color: #000000;
+        font-weight: normal;
+        color: white;
+    }
+    #tablaAcerca td + td :nth-child(even){
+        background-color: #000000;
+    }
+    #tablaAcerca td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
+
+@media all and (max-width: 1350px) {
+    table {
+        width: 100%;
+    }
+    td {
+        background-color: #FFFFFF;
+        color: black;
+        font-weight: bold;
+    }
+    th{
+        display: none;
+    }
+    td {
+        display: block;
+        text-align:center;
+    }
+    td + td {
+        background-color: #000000;
+        font-weight: normal;
+        color: white;
+    }
+    td + td :nth-child(even){
+        background-color: #000000;
+    }
+    td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+}
